@@ -1,1 +1,1 @@
-# chritmas
+# christmas
