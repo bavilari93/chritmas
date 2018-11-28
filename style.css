@@ -15,52 +15,65 @@ body {
   flex-wrap: wrap; }
 
 .tree {
-  border-bottom: solid 6rem #336666;
-  border-right: solid 2rem transparent;
-  border-left: solid 2rem transparent; }
+  transform: rotate(-20deg);
+  margin-top: 3rem;
+  margin-left: -10.8rem; }
   .tree:before {
     content: '';
-    position: absolute;
+    position: relative;
     border-bottom: solid 2rem #336666;
     border-right: solid 2.3rem transparent;
     border-left: solid 2.3rem transparent;
     border-radius: 90% 0% 30% 20%;
-    top: 13.8rem;
-    left: 10.3rem;
+    top: 11.5rem;
     transform: rotate(-10deg); }
   .tree:after {
     content: '';
-    position: absolute;
+    position: relative;
     border-bottom: solid 2rem #336666;
     border-right: solid 2.3rem transparent;
     border-left: solid 2.3rem transparent;
     border-radius: 90% 0% 30% 20%;
-    top: 14rem;
-    left: 10.1rem;
+    top: 4.8rem;
     transform: rotate(2deg); }
   .tree > * {
     content: '';
-    position: absolute;
+    position: relative;
     border-bottom: solid 2rem #336666;
     border-right: solid 2.3rem transparent;
     border-left: solid 2.3rem transparent;
     border-radius: 90% 0% 30% 20%;
-    top: 14.3rem;
-    left: 10.1rem; }
+    top: 12.2rem; }
 
 .branch-1 {
-  margin-top: .9rem;
+  margin-top: -.2rem;
   transform: rotate(7deg); }
 
 .branch-2 {
   width: 1rem;
-  margin-top: 2.5rem;
-  margin-left: -.5rem;
+  margin-top: -.9rem;
   transform: rotate(5deg); }
 
 .branch-3 {
   width: 1rem;
-  margin-top: 3.5rem;
-  margin-left: -.3rem; }
+  margin-top: -.4rem; }
+
+.car {
+  background: #cc3333;
+  height: 5.3rem;
+  width: 9rem;
+  position: absolute;
+  margin-top: 19.5rem;
+  border-radius: 25%; }
+  .car:before, .car:after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 2.7rem;
+    border-radius: 20%;
+    margin-top: 2.2rem;
+    box-shadow: inset 0px 15px 7px #990000; }
+  .car:after {
+    margin-left: 6rem; }
 
 /*# sourceMappingURL=style.css.map */
