@@ -1,0 +1,66 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: linear-gradient(90deg, #000 2.91rem, transparent 1%) center, linear-gradient(#000 2.91rem, transparent 1%) center, #fff;
+  background-size: 3rem 3rem; }
+
+.container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tree {
+  border-bottom: solid 6rem #336666;
+  border-right: solid 2rem transparent;
+  border-left: solid 2rem transparent; }
+  .tree:before {
+    content: '';
+    position: absolute;
+    border-bottom: solid 2rem #336666;
+    border-right: solid 2.3rem transparent;
+    border-left: solid 2.3rem transparent;
+    border-radius: 90% 0% 30% 20%;
+    top: 13.8rem;
+    left: 10.3rem;
+    transform: rotate(-10deg); }
+  .tree:after {
+    content: '';
+    position: absolute;
+    border-bottom: solid 2rem #336666;
+    border-right: solid 2.3rem transparent;
+    border-left: solid 2.3rem transparent;
+    border-radius: 90% 0% 30% 20%;
+    top: 14rem;
+    left: 10.1rem;
+    transform: rotate(2deg); }
+  .tree > * {
+    content: '';
+    position: absolute;
+    border-bottom: solid 2rem #336666;
+    border-right: solid 2.3rem transparent;
+    border-left: solid 2.3rem transparent;
+    border-radius: 90% 0% 30% 20%;
+    top: 14.3rem;
+    left: 10.1rem; }
+
+.branch-1 {
+  margin-top: .9rem;
+  transform: rotate(7deg); }
+
+.branch-2 {
+  width: 1rem;
+  margin-top: 2.5rem;
+  margin-left: -.5rem;
+  transform: rotate(5deg); }
+
+.branch-3 {
+  width: 1rem;
+  margin-top: 3.5rem;
+  margin-left: -.3rem; }
+
+/*# sourceMappingURL=style.css.map */

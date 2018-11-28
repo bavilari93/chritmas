@@ -1,0 +1,95 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+// Colors
+$bg-color: #000;
+$dot-color: #fff;
+$tree: #336666;
+$car: cc3333;
+$car-shadow:#990000;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+
+//branches 
+@mixin branch() {
+    content: '';
+    position: absolute;
+    border: {
+        bottom: solid 2rem $tree;
+        right: solid 2.3rem transparent;
+        left: solid 2.3rem transparent;
+        radius: 90% 0% 30% 20%;
+    }
+
+}
+
+// Dimensions
+$dot-size: .09rem;
+$dot-space: 3rem;
+
+body {
+    background:
+        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
+}
+
+//container
+.container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tree {
+    border: {
+        bottom: solid 6rem $tree;
+        right: solid 2rem transparent;
+        left: solid 2rem transparent;
+    }
+    &:before {
+        @include branch;
+        top: 13.8rem;
+        left: 10.3rem;
+        transform: rotate(-10deg);
+    }
+
+    &:after {
+        @include branch;
+        top: 14rem;
+        left: 10.1rem;
+        transform: rotate(2deg);
+    }
+
+    >* {
+        @include branch;
+        top: 14.3rem;
+        left: 10.1rem;
+    }
+}
+
+.branch-1 {
+    margin-top: .9rem;
+    transform: rotate(7deg);
+}
+
+.branch-2 {
+    width: 1rem;
+    margin-top: 2.5rem;
+    margin-left: -.5rem;
+    transform: rotate(5deg);
+}
+
+.branch-3 {
+    width: 1rem;
+    margin-top: 3.5rem;
+    margin-left: -.3rem;
+}
