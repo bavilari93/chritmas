@@ -97,4 +97,39 @@ body {
   margin-top: -.8rem;
   box-shadow: inset 0px 1px 7px black; }
 
+.inner {
+  position: absolute;
+  height: 1.4rem;
+  width: 2.3rem;
+  background: repeating-linear-gradient(black, #ffffcc 28%);
+  border-radius: 20%;
+  margin-top: 3.3rem;
+  margin-left: 3.4rem; }
+
+.tire {
+  height: 2rem;
+  width: 1.3rem;
+  border-radius: 20%;
+  background-color: #336699;
+  margin-top: 24rem; }
+  .tire:before {
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 1.3rem;
+    border-radius: 20%;
+    background-color: #336699;
+    transform: translateX(5.4rem);
+    z-index: -1; }
+
+.plate {
+  position: absolute;
+  width: 3rem;
+  height: .6rem;
+  background: #ffffcc;
+  font-size: .08rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25rem; }
+
 /*# sourceMappingURL=style.css.map */
