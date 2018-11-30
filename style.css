@@ -105,6 +105,14 @@ body {
   border-radius: 20%;
   margin-top: 3.3rem;
   margin-left: 3.4rem; }
+  .inner:before {
+    content: '';
+    position: absolute;
+    background: #333333;
+    width: 6rem;
+    height: .2rem;
+    margin-top: -3rem;
+    margin-left: -1.8rem; }
 
 .tire {
   height: 2rem;
@@ -131,5 +139,61 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 25rem; }
+
+.roof {
+  position: absolute;
+  background: #333333;
+  height: .7rem;
+  width: 7.7rem;
+  border-radius: 10%;
+  margin-top: 16.8rem; }
+  .roof:before, .roof:after {
+    content: '';
+    position: absolute;
+    height: 2.9rem;
+    width: .3rem;
+    background: #333333; }
+  .roof:after {
+    margin-left: 7.4rem; }
+
+.dog {
+  position: absolute;
+  width: 1.7rem;
+  height: 2.6rem;
+  background-image: radial-gradient(circle at center, black 2px, white 2px), radial-gradient(circle at center, black 2px, white 2px);
+  background-size: 10px 10px;
+  background-position: 1px -1px, bottom left;
+  background-repeat: repeat;
+  margin-top: 18.5rem;
+  margin-left: 2rem;
+  border-radius: 40%;
+  z-index: -1;
+  transform: rotate(20deg); }
+  .dog:before, .dog:after {
+    content: '';
+    position: absolute;
+    background: white; }
+  .dog:before {
+    height: 1rem;
+    width: 2rem;
+    margin-top: -1rem;
+    border-radius: 30%;
+    margin-left: .3rem; }
+  .dog:after {
+    width: .5rem;
+    height: .9rem;
+    background: black;
+    margin-top: -.4rem;
+    margin-left: .4rem;
+    border-radius: 50%; }
+
+.eye {
+  position: relative;
+  height: 4px;
+  width: 4px;
+  background: black;
+  border-radius: 100%;
+  margin-left: 1rem;
+  margin-top: -.8rem; }
 
 /*# sourceMappingURL=style.css.map */
