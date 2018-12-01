@@ -60,7 +60,7 @@ body {
 
     margin: {
         top: 3rem;
-        left: -10.8rem;
+        left: -13rem;
     }
 
     &:before {
@@ -170,19 +170,19 @@ body {
 }
 
 .tire {
-    height: 2rem;
+    height:2rem;
     width: 1.3rem;
     border-radius:20%;
     background-color:#336699;
-    margin-top: 24rem;
-        &:before {
+    margin-top:24rem;
+        &:before{
         content: '';
         position: absolute;
-        height: 2rem;
-        width: 1.3rem;
+        height:2rem;
+        width:1.3rem;
         border-radius: 20%;
-        background-color: #336699;
-        transform:translateX(5.4rem);
+        background-color:#336699;
+        transform:translateX(7rem);
         z-index:-1;
     }
 }
@@ -257,6 +257,15 @@ position:relative;
 	border-radius:100%;
 	margin-left:1rem;
 	margin-top:-.8rem;
+	&:before{
+		content:'';
+		position:absolute;
+		height:5px; 
+		width:5px;
+		background:red;
+		border-radius:100%; 
+		margin-left:1.2rem;
+	}
 }
 .gift{
 position:absolute;
